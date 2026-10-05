@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+/* Shared Tailwind theme; component styles live in utility classes. */
+@theme {
+  --font-arial: Arial, Helvetica, sans-serif;
+  --color-hsp-charcoal: #232630;
+  --color-hsp-navy: #263e53;
+  --color-hsp-cream: #f2efeb;
+  --color-hsp-orange: #ff4f00;
+  --color-hsp-gray: #6c6868;
+  --color-hsp-silver: #b5b5b5;
+  --color-hsp-slate: #788b98;
+  --color-hsp-blue: #809bc6;
+  --color-hsp-green: #437b68;
+  --color-hsp-border: rgb(242 239 235 / 35%);
+  --color-hsp-shadow: rgb(35 38 48 / 30%);
+  --spacing-section: clamp(20px, 3.4vw, 51px);
+  --text-heading: clamp(30px, 4vw, 60px);
+  --text-body: clamp(16px, 1.96vw, 30px);
+}
