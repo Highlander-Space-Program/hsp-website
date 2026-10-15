@@ -10,7 +10,7 @@ export default function HomeTeams() {
     >
       <div
         aria-hidden="true"
-        className="pointer-events-none absolute top-0 right-0 -z-10 h-[45%] w-[40%] bg-[url('/images/brand/team-topography-light.png')] bg-cover bg-[position:right_top] bg-no-repeat opacity-70 max-[641px]:w-[70%]"
+        className="pointer-events-none absolute top-0 right-0 -z-10 h-[45%] w-[40%] bg-[url('/images/brand/team-topography-light.webp')] bg-cover bg-[position:right_top] bg-no-repeat opacity-70 max-[641px]:w-[70%]"
       />
       <h2
         className="text-heading m-0 leading-[1.05] font-bold tracking-[-0.065em] uppercase"

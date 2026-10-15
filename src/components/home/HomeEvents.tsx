@@ -6,7 +6,7 @@ export default function HomeEvents() {
   return (
     <section
       id="events"
-      className="text-hsp-charcoal px-section relative isolate py-4 [background:var(--color-hsp-cream)_url('/images/home/events-pattern.png')_center_/_cover] max-[641px]:py-6"
+      className="text-hsp-charcoal px-section relative isolate py-4 [background:var(--color-hsp-cream)_url('/images/home/events-pattern.webp')_center_/_cover] max-[641px]:py-6"
       aria-labelledby="events-heading"
     >
       <h2
@@ -17,7 +17,7 @@ export default function HomeEvents() {
       </h2>
       <Image
         className="absolute bottom-0 left-0 h-auto w-[15%] -scale-x-100 max-[641px]:w-[25%] max-[401px]:hidden min-[641px]:max-[951px]:hidden"
-        src="/images/brand/scotty-pushing.png"
+        src="/images/brand/scotty-pushing.webp"
         alt=""
         width={220}
         height={220}

@@ -21,7 +21,7 @@ export default function HomeFundraiser() {
       <div className="relative isolate flex min-w-0 flex-col py-4 pr-[18%] pl-[5%] max-[641px]:px-6 max-[641px]:py-6">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-y-0 right-0 -z-10 w-[22%] bg-[url('/images/brand/riverside-topography.png')] bg-[length:auto_180%] bg-left bg-no-repeat max-[641px]:opacity-40"
+          className="pointer-events-none absolute inset-y-0 right-0 -z-10 w-[22%] bg-[url('/images/brand/riverside-topography.webp')] bg-[length:auto_180%] bg-left bg-no-repeat max-[641px]:opacity-40"
         />
         <div
           aria-hidden="true"

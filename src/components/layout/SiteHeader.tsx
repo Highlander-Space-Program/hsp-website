@@ -27,7 +27,7 @@ export default function SiteHeader() {
       >
         <Image
           className="h-auto w-[34%] origin-left scale-200"
-          src="/images/brand/hsp-orbit-light.png"
+          src="/images/brand/hsp-orbit-light.webp"
           alt=""
           width={90}
           height={80}
@@ -36,7 +36,7 @@ export default function SiteHeader() {
         />
         <Image
           className="h-auto w-[66%]"
-          src="/images/brand/hsp-wordmark-light.png"
+          src="/images/brand/hsp-wordmark-light.webp"
           alt="HSP"
           width={170}
           height={70}
