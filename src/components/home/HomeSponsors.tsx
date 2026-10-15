@@ -2,6 +2,11 @@ import Image from "next/image";
 import CommunityLink from "./CommunityLink";
 import { communityLinks, sponsorPlaceholders } from "@/data/home";
 
+const sponsorLogos: Record<string, string> = {
+  LabJack: "/images/home/sponsors/labjack.png",
+  "Parker Aerospace": "/images/home/sponsors/parker-aerospace.png",
+};
+
 export default function HomeSponsors() {
   return (
     <section
@@ -25,18 +30,32 @@ export default function HomeSponsors() {
             Interested in contributing? ↗
           </CommunityLink>
         </div>
-        <div className="mt-10 grid grid-cols-3 gap-[16px_20px] max-[641px]:mt-6 max-[641px]:grid-cols-2 max-[641px]:gap-3 max-[401px]:grid-cols-1">
+        <div className="mt-10 grid grid-cols-6 gap-[16px_20px] max-[641px]:mt-6 max-[641px]:gap-3">
           {sponsorPlaceholders.map((name) => (
             <div
-              className="flex min-h-[clamp(60px,_7.6vw,_115px)] flex-col items-center justify-center p-2.5 text-center [border:1px_dashed_var(--color-hsp-border)] max-[641px]:min-h-22.5"
+              className={`flex min-h-[clamp(60px,_7.6vw,_115px)] flex-col items-center justify-center p-2.5 text-center max-[641px]:min-h-22.5 ${sponsorLogos[name] ? "col-span-3" : "col-span-2 [border:1px_dashed_var(--color-hsp-border)] max-[401px]:col-span-6"}`}
               key={name}
             >
-              <strong className="text-[length:clamp(16px,_2vw,_30px)] leading-[1.05]">
-                {name}
-              </strong>
-              <span className="text-hsp-silver mt-[5px] text-[length:clamp(10px,_1vw,_15px)]">
-                Logo placeholder
-              </span>
+              {sponsorLogos[name] ? (
+                <div className="relative h-[clamp(60px,_6vw,_90px)] w-full">
+                  <Image
+                    src={sponsorLogos[name]}
+                    alt={name}
+                    className="object-contain"
+                    fill
+                    sizes="(max-width: 640px) 45vw, 33vw"
+                  />
+                </div>
+              ) : (
+                <>
+                  <strong className="text-[length:clamp(16px,_2vw,_30px)] leading-[1.05]">
+                    {name}
+                  </strong>
+                  <span className="text-hsp-silver mt-[5px] text-[length:clamp(10px,_1vw,_15px)]">
+                    Logo placeholder
+                  </span>
+                </>
+              )}
             </div>
           ))}
         </div>

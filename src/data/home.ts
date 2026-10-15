@@ -91,14 +91,13 @@ export const teamGallery = [
     alt: "HSP members posing together in the desert",
   },
 ];
-// Sponsor names appear in the visual reference. Logo artwork was not supplied.
+// Sponsors are ordered by row, with available logos first.
 export const sponsorPlaceholders = [
-  "Parker Aerospace",
   "LabJack",
-  "Ansys",
-  "UCR · Bourns College of Engineering",
-  "Altium Designer",
-  "Rice Hydro Inc.",
+  "Parker Aerospace",
+  "Associated Students of UCR",
+  "TRIAD Magnetics",
+  "KatForge",
 ];
 // Replace null with confirmed URLs. Never send visitors to invented destinations.
 export const communityLinks: {
@@ -109,9 +108,11 @@ export const communityLinks: {
   linkedin: string | null;
   email: string | null;
 } = {
-  discord: null,
-  application: null,
-  donate: null,
+  discord: "https://discord.gg/rEKQjmkCk",
+  application:
+    "https://docs.google.com/forms/d/e/1FAIpQLSdJpRq00YBMLYjbXwaeZkX5cVKSROaRFBn6U-BILDaN4LeJxQ/viewform?pli=1",
+  donate:
+    "https://www.givecampus.com/schools/UniversityofCaliforniaRiverside/bcoe-match-challenge-campaign-2026/pages/highlander-space-program-26",
   instagram: null,
   linkedin: null,
   email: null,

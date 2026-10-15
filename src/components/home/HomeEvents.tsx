@@ -36,15 +36,14 @@ export default function HomeEvents() {
           >
             Link to donate ↗
           </CommunityLink>
-          <div className="bg-hsp-navy mt-4 flex min-h-[clamp(135px,_12.4vw,_188px)] flex-col items-center justify-center gap-3 text-center [border:1px_dashed_var(--color-hsp-cream)] max-[641px]:min-h-37.5">
-            <strong className="text-[length:clamp(19px,_2.4vw,_36px)] leading-none uppercase">
-              BCOE
-              <br />
-              Match Challenge
-            </strong>
-            <span className="text-[length:clamp(10px,_1vw,_15px)]">
-              Event artwork placeholder
-            </span>
+          <div className="relative mt-4 min-h-[clamp(135px,_12.4vw,_188px)] max-[641px]:min-h-37.5">
+            <Image
+              src="/images/home/bcoe-match-art.png"
+              alt="BCOE Match Challenge campaign artwork"
+              className="object-contain"
+              fill
+              sizes="(max-width: 640px) 80vw, 26vw"
+            />
           </div>
         </article>
         <article
