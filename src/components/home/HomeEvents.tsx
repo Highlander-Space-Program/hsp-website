@@ -38,7 +38,7 @@ export default function HomeEvents() {
           </CommunityLink>
           <div className="relative mt-4 min-h-[clamp(135px,_12.4vw,_188px)] max-[641px]:min-h-37.5">
             <Image
-              src="/images/home/bcoe-match-art.png"
+              src="/images/home/bcoe-match-art.webp"
               alt="BCOE Match Challenge campaign artwork"
               className="object-contain"
               fill

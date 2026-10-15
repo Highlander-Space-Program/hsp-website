@@ -3,8 +3,8 @@ import CommunityLink from "./CommunityLink";
 import { communityLinks, sponsorPlaceholders } from "@/data/home";
 
 const sponsorLogos: Record<string, string> = {
-  LabJack: "/images/home/sponsors/labjack.png",
-  "Parker Aerospace": "/images/home/sponsors/parker-aerospace.png",
+  LabJack: "/images/home/sponsors/labjack.webp",
+  "Parker Aerospace": "/images/home/sponsors/parker-aerospace.webp",
 };
 
 export default function HomeSponsors() {
