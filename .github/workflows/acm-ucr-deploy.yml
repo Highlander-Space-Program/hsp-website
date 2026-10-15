@@ -23,6 +23,7 @@ jobs:
         with:
           node-version: "20"
       - uses: actions/configure-pages@v4
+        id: pages
         with:
           static_site_generator: next
       - uses: actions/cache@v3
@@ -33,6 +34,10 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-nextjs-${{ hashFiles('**/package-lock.json') }}-
       - uses: acm-ucr/build@v2
+      - name: Prefix public image URLs for GitHub Pages
+        run: node scripts/prefix-export-images.mjs
+        env:
+          PAGES_BASE_PATH: ${{ steps.pages.outputs.base_path }}
       - run: touch ./.nojekyll
       - uses: actions/upload-pages-artifact@v3
         with:
