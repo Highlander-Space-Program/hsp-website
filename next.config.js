@@ -7,8 +7,8 @@ const nextConfig = {
     path: "",
     unoptimized: true,
   },
-  basePath: "",
-  assetPrefix: "",
+  basePath: process.env.PAGES_BASE_PATH || "",
+  assetPrefix: process.env.PAGES_BASE_PATH || "",
 };
 
 module.exports = nextConfig;
