@@ -25,7 +25,7 @@ export default function SiteFooter() {
       >
         <Image
           className="h-auto max-h-[165px] w-[95%] object-contain max-[641px]:mx-auto max-[641px]:w-60"
-          src="/images/brand/hsp-logo-light.png"
+          src="/images/brand/hsp-logo-light.webp"
           width={380}
           height={180}
           alt="Highlander Space Program"
