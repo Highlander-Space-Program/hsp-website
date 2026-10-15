@@ -24,12 +24,17 @@ jobs:
   images:
     name: images
     runs-on: ubuntu-latest
+    # Repository and organization settings must also allow Actions to create PRs.
+    permissions:
+      contents: write
+      pull-requests: write
 
     steps:
       - uses: actions/checkout@v4
       - uses: acm-ucr/images@v2
         with:
-          branch: ${{ github.head_ref }}
+          # v2 forwards inputs.branch but omits its declaration in action.yaml.
+          branch: ${{ github.head_ref || github.ref_name }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
