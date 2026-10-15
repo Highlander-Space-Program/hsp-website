@@ -11,8 +11,8 @@ export default function Home() {
   return (
     <>
       <HomeHero />
-      <HomeAbout />
       <HomeFundraiser />
+      <HomeAbout />
       <HomeProjects />
       <HomeTeams />
       <HomeOutreach />
