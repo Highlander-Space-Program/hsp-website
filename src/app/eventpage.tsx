@@ -14,9 +14,9 @@ type EventItem = {
 
 //change url's
 const discordUrl = "something";
-const applicationUrl = "something";
-const donationUrl = "something";
-const otherUrl = "something";
+//const applicationUrl = "something";
+//const donationUrl = "something";
+//const otherUrl = "something";
 
 //for events (what specific events are happening)
 //add more based follow up
