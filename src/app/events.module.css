@@ -152,7 +152,10 @@
       transparent 30%
     ),
     radial-gradient(#293c5726 1px, transparent 1px);
-  background-size: auto, auto, 8px 8px;
+  background-size:
+    auto,
+    auto,
+    8px 8px;
   scroll-margin-top: 24px;
 }
 

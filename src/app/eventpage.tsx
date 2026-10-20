@@ -3,16 +3,16 @@ import styles from "./events.module.css";
 //import { title } from "process";
 
 type EventItem = {
-    title: string;
-    date: string;
-    description?: string;
-    image?: string;
-    imageAlt?: string;
-    link?: string;
-    linkLabel?: string;
+  title: string;
+  date: string;
+  description?: string;
+  image?: string;
+  imageAlt?: string;
+  link?: string;
+  linkLabel?: string;
 };
 
-//change url's 
+//change url's
 const discordUrl = "";
 const applicationUrl = "";
 const donationUrl = "";
@@ -21,19 +21,19 @@ const otherUrl = "";
 //for events (what specific events are happening)
 //add more based follow up
 const events: EventItem[] = [
-    {
-        title: "",
-        date: "",
-        image: "",
-        link: "",
-        linkLabel: "",
-    },
+  {
+    title: "",
+    date: "",
+    image: "",
+    link: "",
+    linkLabel: "",
+  },
 
-    {
-        title: "MORE EVENTS",
-        date: "DEATILS COMING SOON",
-        description: "Check back soon for more events and updates!",
-    },
+  {
+    title: "MORE EVENTS",
+    date: "DEATILS COMING SOON",
+    description: "Check back soon for more events and updates!",
+  },
 ];
 
 function EventCard({ event }: { event: EventItem }) {
@@ -84,10 +84,7 @@ export default function EventsPage() {
         </h1>
       </header>
 
-      <section
-        className={styles.outreach}
-        aria-labelledby="outreach-heading"
-      >
+      <section className={styles.outreach} aria-labelledby="outreach-heading">
         <div className={styles.rocketPhoto}>
           <Image
             src="/images/events/rocket.jpg"
@@ -114,8 +111,8 @@ export default function EventsPage() {
 
         <div className={`${styles.panel} ${styles.mission}`}>
           <p>
-            HSP is committed to inspiring the next generation of
-            scientists and engineers through community outreach.
+            HSP is committed to inspiring the next generation of scientists and
+            engineers through community outreach.
           </p>
         </div>
 
@@ -172,11 +169,7 @@ export default function EventsPage() {
 
         <div className={styles.discord}>
           {discordUrl ? (
-            <a
-              href={discordUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <a href={discordUrl} target="_blank" rel="noopener noreferrer">
               Latest updates on our Discord!
               <span aria-hidden="true"> ↗</span>
             </a>
