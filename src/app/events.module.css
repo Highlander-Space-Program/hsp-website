@@ -1,0 +1,287 @@
+.page {
+  --navy: #293c57;
+  --dark: #242630;
+  --orange: #ff5700;
+  --cream: #f3f0e9;
+  --card: #7c8b9c;
+
+  width: 100%;
+  max-width: 1440px;
+  margin: 0 auto;
+  background: var(--dark);
+  color: var(--cream);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page,
+.page * {
+  box-sizing: border-box;
+}
+
+.page h1,
+.page h2,
+.page h3,
+.page p {
+  margin: 0;
+}
+
+.heading {
+  padding: 22px 20px;
+  text-align: center;
+}
+
+.heading h1 {
+  font-size: clamp(36px, 5vw, 64px);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -2px;
+}
+
+.outreach {
+  display: grid;
+  grid-template-columns: 0.55fr 1.1fr 1.15fr 1.15fr;
+  grid-template-areas:
+    "rocket title team mission"
+    "mascot meeting invitation tabling";
+  grid-template-rows: repeat(2, minmax(240px, auto));
+  gap: 3px;
+  background: #8196af;
+}
+
+.rocketPhoto {
+  grid-area: rocket;
+}
+
+.outreachTitle {
+  grid-area: title;
+}
+
+.teamPhoto {
+  grid-area: team;
+}
+
+.mission {
+  grid-area: mission;
+}
+
+.mascot {
+  grid-area: mascot;
+  background: var(--navy);
+}
+
+.meetingPhoto {
+  grid-area: meeting;
+}
+
+.invitation {
+  grid-area: invitation;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.tablingPhoto {
+  grid-area: tabling;
+}
+
+.rocketPhoto,
+.teamPhoto,
+.mascot,
+.meetingPhoto,
+.tablingPhoto {
+  position: relative;
+  min-width: 0;
+  min-height: 240px;
+  overflow: hidden;
+}
+
+.photo {
+  object-fit: cover;
+}
+
+.mascotImage {
+  object-fit: contain;
+  padding: 12px;
+}
+
+.panel {
+  min-width: 0;
+  padding: 20px;
+  background-color: var(--navy);
+  background-image: radial-gradient(
+    ellipse at bottom right,
+    rgb(255 87 0 / 24%),
+    transparent 60%
+  );
+}
+
+.outreachTitle h2 {
+  font-size: clamp(25px, 3vw, 44px);
+  font-weight: 800;
+  letter-spacing: -1.5px;
+  overflow-wrap: anywhere;
+}
+
+.panel p {
+  font-size: clamp(18px, 1.8vw, 26px);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.invitation a {
+  align-self: flex-start;
+  color: var(--cream);
+  font-weight: 700;
+  text-underline-offset: 5px;
+}
+
+.upcoming {
+  padding: 28px clamp(20px, 4vw, 64px) 32px;
+  color: var(--dark);
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(
+      ellipse at 100% 0%,
+      rgb(255 87 0 / 85%) 0%,
+      transparent 34%
+    ),
+    radial-gradient(
+      ellipse at 0% 100%,
+      rgb(255 87 0 / 65%) 0%,
+      transparent 30%
+    ),
+    radial-gradient(#293c5726 1px, transparent 1px);
+  background-size: auto, auto, 8px 8px;
+  scroll-margin-top: 24px;
+}
+
+.upcoming h2 {
+  margin-bottom: 24px;
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 800;
+  line-height: 1.05;
+  letter-spacing: -1.5px;
+}
+
+.eventGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  min-height: 320px;
+  padding: 18px;
+  background: var(--card);
+  color: #fff;
+}
+
+.card h3 {
+  margin-bottom: 28px;
+  font-size: clamp(19px, 2vw, 25px);
+  font-weight: 700;
+  line-height: 1.15;
+}
+
+.date {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.eventLink,
+.pendingLink {
+  margin-top: 6px;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.eventLink {
+  color: #fff;
+  text-underline-offset: 4px;
+}
+
+.card .pendingLink {
+  margin-top: 6px;
+}
+
+.card .description {
+  margin: auto 0;
+  padding: 28px 0;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.cardImage {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  margin-top: 20px;
+  overflow: hidden;
+}
+
+.discord {
+  margin-top: 24px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.discord a {
+  color: var(--dark);
+  text-underline-offset: 5px;
+}
+
+.page a:hover {
+  text-decoration-thickness: 3px;
+}
+
+.page a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 5px;
+}
+
+@media (max-width: 700px) {
+  .outreach {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "title title"
+      "rocket mascot"
+      "team team"
+      "mission mission"
+      "meeting tabling"
+      "invitation invitation";
+    grid-template-rows: auto;
+  }
+
+  .panel {
+    padding: 24px;
+  }
+
+  .outreachTitle h2 {
+    font-size: 36px;
+  }
+
+  .teamPhoto {
+    min-height: 300px;
+  }
+
+  .eventGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .card {
+    min-height: 260px;
+  }
+
+  .card h3 {
+    font-size: 25px;
+  }
+}
