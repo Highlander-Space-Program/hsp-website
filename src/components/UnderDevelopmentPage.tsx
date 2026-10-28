@@ -1,3 +1,4 @@
+import LinkArrow from "@/components/LinkArrow";
 import Link from "next/link";
 import { Rocket } from "lucide-react";
 
@@ -26,7 +27,7 @@ export default function UnderDevelopmentPage({ title }: { title: string }) {
         href="/"
         className="bg-hsp-orange text-hsp-charcoal mt-10 rounded-full px-7 py-3 font-bold"
       >
-        Back to home <span aria-hidden="true">↗</span>
+        Back to home <LinkArrow />
       </Link>
     </section>
   );

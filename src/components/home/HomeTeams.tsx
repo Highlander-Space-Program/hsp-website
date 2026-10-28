@@ -1,3 +1,4 @@
+import LinkArrow from "@/components/LinkArrow";
 import Image from "next/image";
 import { teams, teamGallery } from "@/data/home";
 
@@ -35,7 +36,7 @@ export default function HomeTeams() {
             </div>
             <h3 className="mt-[5px] text-[length:clamp(14px,_1.85vw,_28px)] leading-none font-bold tracking-[-0.075em] whitespace-nowrap uppercase max-[641px]:text-[length:15px] max-[641px]:whitespace-normal max-[401px]:text-[length:20px] min-[641px]:max-[951px]:text-[length:18px] min-[641px]:max-[951px]:whitespace-normal">
               {team.name}
-              <span aria-hidden="true">↗</span>
+              <LinkArrow />
             </h3>
             <p className="text-[length:clamp(10px,_1.15vw,_17px)] leading-none font-bold tracking-[-0.045em] max-[641px]:text-[length:12px] max-[641px]:leading-[1.2] min-[641px]:max-[951px]:text-[length:13px] min-[641px]:max-[951px]:leading-[1.2]">
               {team.description}
@@ -75,7 +76,8 @@ export default function HomeTeams() {
         className="text-heading mx-auto mt-2 mb-0 block w-fit leading-[1.15] font-bold tracking-[-0.06em] uppercase max-[641px]:mt-3.5"
         href="#join"
       >
-        Join us<span aria-hidden="true">↗</span>
+        Join us
+        <LinkArrow />
       </a>
     </section>
   );

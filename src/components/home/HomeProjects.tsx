@@ -1,3 +1,4 @@
+import LinkArrow from "@/components/LinkArrow";
 import Image from "next/image";
 import { projects } from "@/data/home";
 
@@ -55,7 +56,7 @@ export default function HomeProjects() {
               <div className="relative flex flex-wrap items-start justify-between gap-3 max-[641px]:flex-wrap max-[641px]:gap-2 min-[641px]:max-[951px]:flex-wrap">
                 <h3 className="text-[length:clamp(26px,_4vw,_60px)] leading-[0.9] font-normal tracking-[-0.075em] uppercase max-[641px]:text-[length:33px] max-[401px]:text-[length:30px] min-[641px]:max-[951px]:text-[length:30px]">
                   {project.name}
-                  <span aria-hidden="true">↗</span>
+                  <LinkArrow />
                 </h3>
                 <span className="bg-hsp-cream text-hsp-charcoal relative min-w-[24%] shrink-0 text-center text-[length:clamp(20px,_2.8vw,_42px)] leading-[0.95] tracking-[-0.08em] whitespace-nowrap max-[641px]:static max-[641px]:px-1 max-[641px]:py-0.5 max-[641px]:text-[length:23px] min-[641px]:max-[951px]:static min-[641px]:max-[951px]:mb-1 min-[641px]:max-[951px]:text-[length:20px]">
                   {index === 0 && (

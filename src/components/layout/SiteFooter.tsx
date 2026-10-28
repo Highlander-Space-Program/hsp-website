@@ -53,9 +53,14 @@ export default function SiteFooter() {
           <br />
           Riverside, CA 92507
         </address>
-        <div className="mt-2 flex justify-end gap-[9%] max-[641px]:mt-4 max-[641px]:justify-center max-[641px]:gap-6">
+        <div className="mt-2 flex justify-end gap-[9%] max-[641px]:mt-4 max-[641px]:justify-center max-[641px]:gap-3">
           {socialLinks.map(({ label, href, Icon }) => (
-            <CommunityLink key={label} href={href} label={label}>
+            <CommunityLink
+              key={label}
+              href={href}
+              label={label}
+              className="inline-flex min-h-11 min-w-6 items-center justify-center max-[641px]:min-w-11"
+            >
               <Icon aria-hidden="true" />
             </CommunityLink>
           ))}

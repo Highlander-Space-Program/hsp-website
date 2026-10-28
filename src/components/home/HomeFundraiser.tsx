@@ -1,3 +1,4 @@
+import LinkArrow from "@/components/LinkArrow";
 import Image from "next/image";
 import CommunityLink from "./CommunityLink";
 import { communityLinks } from "@/data/home";
@@ -40,7 +41,7 @@ export default function HomeFundraiser() {
         </p>
         <div className="text-body mt-auto pt-8 font-bold tracking-[-0.045em]">
           <CommunityLink href={communityLinks.donate}>
-            Support Us <span aria-hidden="true">↗</span>
+            Support Us <LinkArrow />
           </CommunityLink>
         </div>
       </div>

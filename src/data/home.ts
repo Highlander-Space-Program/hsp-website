@@ -91,14 +91,6 @@ export const teamGallery = [
     alt: "HSP members posing together in the desert",
   },
 ];
-// Sponsors are ordered by row, with available logos first.
-export const sponsorPlaceholders = [
-  "LabJack",
-  "Parker Aerospace",
-  "Associated Students of UCR",
-  "TRIAD Magnetics",
-  "KatForge",
-];
 // Replace null with confirmed URLs. Never send visitors to invented destinations.
 export const communityLinks: {
   discord: string | null;
