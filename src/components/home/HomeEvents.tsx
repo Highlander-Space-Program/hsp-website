@@ -1,3 +1,4 @@
+import LinkArrow from "@/components/LinkArrow";
 import Image from "next/image";
 import CommunityLink from "./CommunityLink";
 import { communityLinks } from "@/data/home";
@@ -34,7 +35,7 @@ export default function HomeEvents() {
             className="text-[length:clamp(12px,_1.3vw,_20px)] leading-[1.2] font-bold max-[641px]:text-[length:14px]"
             href={communityLinks.donate}
           >
-            Link to donate ↗
+            Link to donate <LinkArrow />
           </CommunityLink>
           <div className="relative mt-4 min-h-[clamp(135px,_12.4vw,_188px)] max-[641px]:min-h-37.5">
             <Image
@@ -60,7 +61,7 @@ export default function HomeEvents() {
             className="text-[length:clamp(12px,_1.3vw,_20px)] leading-[1.2] font-bold max-[641px]:text-[length:14px]"
             href={communityLinks.application}
           >
-            Link to application ↗
+            Link to application <LinkArrow />
           </CommunityLink>
         </article>
         <article className="bg-hsp-slate text-hsp-cream min-h-[clamp(240px,_24vw,_365px)] min-w-0 px-[4%] py-2.5 max-[641px]:min-h-52.5 max-[641px]:p-4.5">
@@ -74,7 +75,7 @@ export default function HomeEvents() {
       </div>
       <div className="text-body mt-4.5 mr-0 mb-0 ml-[13.5%] font-bold tracking-[-0.055em] max-[641px]:ml-[14%] max-[641px]:text-[length:16px] max-[401px]:ml-0">
         <CommunityLink href={communityLinks.discord}>
-          Latest updates on our discord! ↗
+          Latest updates on our discord! <LinkArrow />
         </CommunityLink>
       </div>
     </section>

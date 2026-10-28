@@ -56,7 +56,7 @@ export default function SiteHeader() {
       <nav
         id="site-navigation"
         aria-label="Main navigation"
-        className="max-[951px]:bg-hsp-charcoal flex flex-1 items-center justify-around gap-3 max-[951px]:absolute max-[951px]:top-[100%] max-[951px]:right-0 max-[951px]:left-0 max-[951px]:hidden max-[951px]:px-5 max-[951px]:py-4 max-[951px]:data-[open=true]:flex max-[951px]:data-[open=true]:flex-col max-[951px]:data-[open=true]:items-stretch max-[951px]:data-[open=true]:gap-0"
+        className="max-[951px]:bg-hsp-charcoal flex flex-1 items-center justify-around gap-3 max-[951px]:absolute max-[951px]:top-[100%] max-[951px]:right-0 max-[951px]:left-0 max-[951px]:hidden max-[951px]:max-h-[calc(100dvh-70px)] max-[951px]:overflow-y-auto max-[951px]:px-5 max-[951px]:py-4 max-[951px]:data-[open=true]:flex max-[951px]:data-[open=true]:flex-col max-[951px]:data-[open=true]:items-stretch max-[951px]:data-[open=true]:gap-0"
         data-open={open}
         onKeyDown={(event) => {
           if (event.key === "Escape") {
