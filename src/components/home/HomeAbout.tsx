@@ -13,7 +13,7 @@ export default function HomeAbout() {
       <div className="before:bg-hsp-orange relative isolate min-w-0 px-[4.5%] pt-3.5 pb-0 before:absolute before:top-0 before:right-0 before:z-1 before:aspect-[0.8] before:h-[17%] before:rounded-[100%_0_0_100%] before:content-[''] after:absolute after:top-0 after:right-0 after:bottom-0 after:w-[2.5%] after:content-[''] after:[background:linear-gradient(_var(--color-hsp-blue)_0_30%,_var(--color-hsp-green)_30%_40%,_var(--color-hsp-gray)_40%_)] max-[641px]:px-6 max-[641px]:py-5.5">
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[38%] bg-[url('/images/brand/about-topography-light.png')] bg-[length:180%_auto] bg-bottom bg-no-repeat opacity-70"
+          className="pointer-events-none absolute inset-x-0 bottom-0 -z-10 h-[38%] bg-[url('/images/brand/about-topography-light.webp')] bg-[length:180%_auto] bg-bottom bg-no-repeat opacity-70"
         />
         <h2
           className="text-heading mx-0 mt-0 mb-2 leading-[1.05] font-bold tracking-[-0.065em] uppercase"

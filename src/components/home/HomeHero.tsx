@@ -22,7 +22,7 @@ export default function HomeHero() {
       >
         <Image
           className="h-auto w-[28%]"
-          src="/images/brand/hsp-mission-patch.png"
+          src="/images/brand/hsp-mission-patch.webp"
           alt=""
           loading="eager"
           data-initial-load
@@ -31,7 +31,7 @@ export default function HomeHero() {
         />
         <Image
           className="h-auto w-[69%]"
-          src="/images/brand/hsp-wordmark-dark.png"
+          src="/images/brand/hsp-wordmark-dark.webp"
           alt=""
           loading="eager"
           data-initial-load

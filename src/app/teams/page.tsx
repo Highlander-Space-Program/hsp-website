@@ -93,7 +93,7 @@ export default function Page() {
       >
         <div
           aria-hidden="true"
-          className="pointer-events-none absolute inset-0 -z-10 bg-[url('/images/brand/about-topography-light.png')] bg-cover bg-center opacity-60"
+          className="pointer-events-none absolute inset-0 -z-10 bg-[url('/images/brand/about-topography-light.webp')] bg-cover bg-center opacity-60"
         />
         <div className="min-h-[33vw] px-[5%] pt-[3%] max-sm:min-h-48 max-sm:px-5 max-sm:py-8">
           <h1

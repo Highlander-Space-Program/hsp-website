@@ -16,20 +16,20 @@ Sourced from `HSP-Website-Information`. Website copies have been resized and com
 - `home/team-desert.webp`: `Home page/IMG_4805.webp`
 - `home/outreach-demonstration.webp`: `Home page/IMG_1189.webp`
 - `home/outreach-engine.webp`: `Home page/IMG_1207 (1).webp`
-- `brand/hsp-wordmark-dark.png`: `Elements/HSP_darkpng.png`
-- `brand/hsp-wordmark-light.png`: `Elements/HSP_light.png`
-- `brand/hsp-orbit-light.png`: `Elements/hsplogo_light.png`
+- `brand/hsp-wordmark-dark.webp`: `Elements/HSP_darkpng.png`
+- `brand/hsp-wordmark-light.webp`: `Elements/HSP_light.png`
+- `brand/hsp-orbit-light.webp`: `Elements/hsplogo_light.png`
 - `brand/scotty-resting.webp`: `Elements/Scotty_laying_down.webp`
-- `brand/scotty-pushing.png`: `Elements/Scotty_push_1.png`
-- `brand/team-topography.png`: `Elements/Riverside-County-1x-topolines.app (6).png`
+- `brand/scotty-pushing.webp`: `Elements/Scotty_push_1.png`
+- `brand/team-topography.webp`: `Elements/Riverside-County-1x-topolines.app (6).png`
 - `home/events-pattern.png`: `Home page/Screenshot 2026-09-28 at 5.10.04 PM.png`
-- `home/outreach-pattern-one.png`: `Home page/Screenshot 2026-09-28 at 5.11.07 PM.png`
-- `home/outreach-pattern-two.png`: `Home page/Screenshot 2026-09-28 at 5.11.21 PM.png`
-- `home/outreach-pattern-three.png`: `Home page/Screenshot 2026-09-28 at 5.11.34 PM.png`
+- `home/outreach-pattern-one.webp`: `Home page/Screenshot 2026-09-28 at 5.11.07 PM.png`
+- `home/outreach-pattern-two.webp`: `Home page/Screenshot 2026-09-28 at 5.11.21 PM.png`
+- `home/outreach-pattern-three.webp`: `Home page/Screenshot 2026-09-28 at 5.11.34 PM.png`
 
 - `home/bcoe-match-challenge.webp`: `Home page/IMG_3087.webp`
-- `brand/about-topography-light.png`: `Elements/Riverside-County-1x-topolines.app (7).png` (white contour lines)
-- `brand/team-topography-light.png`: `Elements/Riverside-County-1x-topolines.app (5).png` (white contour lines)
+- `brand/about-topography-light.webp`: `Elements/Riverside-County-1x-topolines.app (7).png` (white contour lines)
+- `brand/team-topography-light.webp`: `Elements/Riverside-County-1x-topolines.app (5).png` (white contour lines)
 
 - `pages/not-found-pattern.webp`: `404 Page/culture-7-16x9 (20).png`, resized to 1600px wide and encoded as WebP for delivery.
 
@@ -110,3 +110,11 @@ invented or copied from outdated pages.
 
 The donate hero fills the page width with its original 1512/801 desktop aspect
 ratio and no viewport height cap. Its mobile framing is preserved.
+
+## Merge resolution (October 28, 2026)
+
+The 13 PNGs compressed on the Updates branch also became WebP files on dev.
+The resolution keeps dev’s WebP paths and encodes the optimized PNG artwork
+losslessly into those files. Dimensions, alpha, and every visible pixel were
+verified against the optimized PNGs. The obsolete PNGs were removed and source
+references, including the teams-page background, now use WebP.

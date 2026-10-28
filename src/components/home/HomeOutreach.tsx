@@ -17,7 +17,7 @@ export default function HomeOutreach() {
           sizes="15vw"
         />
       </div>
-      <div className="relative min-h-[clamp(175px,_19vw,_288px)] min-w-0 bg-[url('/images/home/outreach-pattern-one.png')] bg-[length:100%_auto] bg-[position:bottom_center] bg-no-repeat px-[5%] py-3 [grid-area:title] max-[641px]:min-h-[185px] max-[641px]:px-3 max-[641px]:py-4 max-[401px]:min-h-30 min-[641px]:max-[951px]:min-h-60">
+      <div className="relative min-h-[clamp(175px,_19vw,_288px)] min-w-0 bg-[url('/images/home/outreach-pattern-one.webp')] bg-[length:100%_auto] bg-[position:bottom_center] bg-no-repeat px-[5%] py-3 [grid-area:title] max-[641px]:min-h-[185px] max-[641px]:px-3 max-[641px]:py-4 max-[401px]:min-h-30 min-[641px]:max-[951px]:min-h-60">
         <h2
           className="text-heading m-0 leading-[1.05] font-bold tracking-[-0.065em] uppercase max-[641px]:text-[length:28px]"
           id="outreach-heading"
@@ -34,7 +34,7 @@ export default function HomeOutreach() {
           sizes="(max-width: 640px) 50vw, 29vw"
         />
       </div>
-      <div className="relative min-h-[clamp(175px,_19vw,_288px)] min-w-0 bg-[url('/images/home/outreach-pattern-two.png')] bg-[length:100%_auto] bg-[position:bottom_center] bg-no-repeat px-[5%] py-2.5 [grid-area:mission] max-[641px]:min-h-[185px] max-[641px]:px-3 max-[641px]:py-4 min-[641px]:max-[951px]:min-h-60">
+      <div className="relative min-h-[clamp(175px,_19vw,_288px)] min-w-0 bg-[url('/images/home/outreach-pattern-two.webp')] bg-[length:100%_auto] bg-[position:bottom_center] bg-no-repeat px-[5%] py-2.5 [grid-area:mission] max-[641px]:min-h-[185px] max-[641px]:px-3 max-[641px]:py-4 min-[641px]:max-[951px]:min-h-60">
         <p className="text-body relative leading-none font-bold tracking-[-0.045em] max-[641px]:text-[length:16px] max-[641px]:leading-[1.15]">
           HSP is committed to inspiring the next generation of scientists and
           engineers through community outreach.
@@ -58,7 +58,7 @@ export default function HomeOutreach() {
           sizes="(max-width: 640px) 50vw, 28vw"
         />
       </div>
-      <div className="after:bg-hsp-orange relative min-h-[clamp(175px,_19vw,_288px)] min-w-0 bg-[url('/images/home/outreach-pattern-three.png')] bg-[length:100%_auto] bg-[position:bottom_center] bg-no-repeat px-[3%] py-2.5 [border-left:clamp(8px,_1.4vw,_21px)_solid_var(--color-hsp-blue)] [grid-area:invitation] after:absolute after:top-[34%] after:left-[-6%] after:aspect-[0.75] after:w-[16%] after:rounded-[0_100%_100%_0] after:content-[''] max-[641px]:min-h-[185px] max-[641px]:px-3 max-[641px]:py-4 min-[641px]:max-[951px]:min-h-60">
+      <div className="after:bg-hsp-orange relative min-h-[clamp(175px,_19vw,_288px)] min-w-0 bg-[url('/images/home/outreach-pattern-three.webp')] bg-[length:100%_auto] bg-[position:bottom_center] bg-no-repeat px-[3%] py-2.5 [border-left:clamp(8px,_1.4vw,_21px)_solid_var(--color-hsp-blue)] [grid-area:invitation] after:absolute after:top-[34%] after:left-[-6%] after:aspect-[0.75] after:w-[16%] after:rounded-[0_100%_100%_0] after:content-[''] max-[641px]:min-h-[185px] max-[641px]:px-3 max-[641px]:py-4 min-[641px]:max-[951px]:min-h-60">
         <p className="text-body relative leading-none font-bold tracking-[-0.045em] max-[641px]:text-[length:16px] max-[641px]:leading-[1.15]">
           Catch us at our next tabling event!
         </p>
