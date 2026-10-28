@@ -1,3 +1,4 @@
+import LinkArrow from "@/components/LinkArrow";
 import Link from "next/link";
 
 export default function NotFound() {
@@ -25,7 +26,7 @@ export default function NotFound() {
           href="/"
           className="inline-block text-xl font-bold underline underline-offset-4 sm:text-2xl"
         >
-          Reenter to Home <span aria-hidden="true">↗</span>
+          Reenter to Home <LinkArrow />
         </Link>
       </div>
     </section>
