@@ -61,11 +61,7 @@ export default function EventsPage() {
           <Link href="/">HOME</Link>
           <Link href="/projects">PROJECTS</Link>
           <Link href="/teams">TEAMS</Link>
-          <Link
-            href="/events"
-            className={styles.active}
-            aria-current="page"
-          >
+          <Link href="/events" className={styles.active} aria-current="page">
             EVENTS
           </Link>
           <Link href="/donate">DONATE</Link>
@@ -79,37 +75,26 @@ export default function EventsPage() {
             <h1 id="events-title">EVENTS</h1>
 
             <p className={styles.description}>
-              Find how to get involved with our Potential New Member
-              Projects!
+              Find how to get involved with our Potential New Member Projects!
             </p>
 
             <div id="get-involved" className={styles.moreInfo}>
               {joinUrl ? (
-                <a
-                  href={joinUrl}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href={joinUrl} target="_blank" rel="noopener noreferrer">
                   More info here ↗
                   <span>Applications, projects, and Discord</span>
                 </a>
               ) : (
                 <p>
                   Want to get involved?
-                  <span>
-                    Application and Discord links coming soon.
-                  </span>
+                  <span>Application and Discord links coming soon.</span>
                 </p>
               )}
             </div>
 
             {images.mascot && (
               <div className={styles.mascot}>
-                <Photo
-                  src={images.mascot}
-                  alt=""
-                  contain
-                />
+                <Photo src={images.mascot} alt="" contain />
               </div>
             )}
           </div>

@@ -177,15 +177,8 @@
 .pattern {
   background-color: #232730;
   background-image:
-    repeating-conic-gradient(
-      from 45deg,
-      #d4d5d8 0% 25%,
-      transparent 0% 50%
-    ),
-    repeating-conic-gradient(
-      #344ba3 0% 25%,
-      #232730 0% 50%
-    );
+    repeating-conic-gradient(from 45deg, #d4d5d8 0% 25%, transparent 0% 50%),
+    repeating-conic-gradient(#344ba3 0% 25%, #232730 0% 50%);
   background-size:
     74px 74px,
     23px 23px;
