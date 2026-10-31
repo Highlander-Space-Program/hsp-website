@@ -14,8 +14,8 @@ const joinUrl = "";
 const sponsorUrl =
   "https://www.givecampus.com/schools/UniversityofCaliforniaRiverside/bcoe-match-challenge-campaign-2026/pages/highlander-space-program-26";
 
-const buttonClasses =
-  "inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#f4f2ed] px-[28px] py-[10px] text-[22px] font-extrabold text-[#232730] shadow-md no-underline transition-colors hover:bg-[#ffcfb4]";
+// const buttonClasses =
+//   "inline-flex min-h-[52px] items-center justify-center rounded-full bg-[#f4f2ed] px-[28px] py-[10px] text-[22px] font-extrabold text-[#232730] shadow-md no-underline transition-colors hover:bg-[#ffcfb4]";
 
 type PhotoProps = {
   src: string;
@@ -213,12 +213,14 @@ export default function EventsPage() {
             JOIN US
           </a>
 
-          <Link
-            href="/donate"
+          <a
+            href={sponsorUrl}
+            target="_blank"
+            rel="noopener noreferrer"
             className="inline-flex min-h-[56px] min-w-[170px] items-center justify-center rounded-full bg-[#f4f2ed] px-7 py-3 text-[26px] font-extrabold text-[#232730] no-underline shadow-md hover:bg-[#ffcfb4]"
           >
             SPONSOR
-          </Link>
+          </a>
         </div>
 
         {/* Right: address and social icons */}
