@@ -6,7 +6,7 @@ const images = {
   team: "/images/events/team.jpg",
   workshop: "/images/events/lookingout.jpg",
   mascot: "/images/events/scotty_orange.jpg",
-  pattern: "/images/events/team_photo.jpg",
+  //pattern: "/images/events/team_photo.jpg",
 };
 
 // Add your real URLs when available.
