@@ -51,9 +51,9 @@ function Photo({ src, alt, contain = false }: PhotoProps) {
 
 export default function EventsPage() {
   return (
-    <div className="mx-auto box-border w-full max-w-[1200px] bg-[#232730] [font-family:Arial,Helvetica,sans-serif] text-[#f4f2ed] [&_*]:box-border [&_a:focus-visible]:[outline:3px_solid_#ff8a49] [&_a:focus-visible]:outline-offset-[5px]">
+    <div className="mx-auto box-border w-full bg-[#232730] [font-family:Arial,Helvetica,sans-serif] text-[#f4f2ed] [&_*]:box-border [&_a:focus-visible]:[outline:3px_solid_#ff8a49] [&_a:focus-visible]:outline-offset-[5px]">
       {/* Navigation */}
-      <header className="flex flex-col items-center gap-5 bg-[#232730] px-5 py-4 lg:flex-row lg:gap-8">
+      <header className="sticky top-0 z-50 flex w-full flex-col items-center gap-5 bg-[#232730] px-5 py-4 shadow-md lg:flex-row lg:gap-8">
         <Link
           href="/"
           aria-label="Highlander Space Program home"
